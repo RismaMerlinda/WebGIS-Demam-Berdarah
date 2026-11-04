@@ -1,0 +1,13 @@
+tahun,bulan,nama_bulan,kasus_laki_laki,kasus_perempuan,total_kasus,meninggal_laki_laki,meninggal_perempuan,total_meninggal,status_kelengkapan,status_publikasi,sumber_data
+2026,1,JANUARI,9,8,17,0,0,0,Lengkap,INTERNAL_BELUM_DIIZINKAN,Workbook EDBD Dinkes Banyumas Oktober 2026 (Sheet DBD-14)
+2026,2,PEBRUARI,7,7,14,0,0,0,Lengkap,INTERNAL_BELUM_DIIZINKAN,Workbook EDBD Dinkes Banyumas Oktober 2026 (Sheet DBD-14)
+2026,3,MARET,5,3,8,0,0,0,Lengkap,INTERNAL_BELUM_DIIZINKAN,Workbook EDBD Dinkes Banyumas Oktober 2026 (Sheet DBD-14)
+2026,4,APRIL,5,10,15,0,1,1,Lengkap,INTERNAL_BELUM_DIIZINKAN,Workbook EDBD Dinkes Banyumas Oktober 2026 (Sheet DBD-14)
+2026,5,MEI,3,5,8,0,0,0,Lengkap,INTERNAL_BELUM_DIIZINKAN,Workbook EDBD Dinkes Banyumas Oktober 2026 (Sheet DBD-14)
+2026,6,JUNI,6,6,12,0,0,0,Lengkap,INTERNAL_BELUM_DIIZINKAN,Workbook EDBD Dinkes Banyumas Oktober 2026 (Sheet DBD-14)
+2026,7,JULI,10,19,29,0,0,0,Lengkap,INTERNAL_BELUM_DIIZINKAN,Workbook EDBD Dinkes Banyumas Oktober 2026 (Sheet DBD-14)
+2026,8,AGUSTUS,5,1,6,0,0,0,Lengkap,INTERNAL_BELUM_DIIZINKAN,Workbook EDBD Dinkes Banyumas Oktober 2026 (Sheet DBD-14)
+2026,9,SEPTEMBER,6,1,7,0,0,0,Lengkap,INTERNAL_BELUM_DIIZINKAN,Workbook EDBD Dinkes Banyumas Oktober 2026 (Sheet DBD-14)
+2026,10,OKTOBER,0,1,1,0,0,0,Perlu Konfirmasi Kelengkapan,INTERNAL_BELUM_DIIZINKAN,Workbook EDBD Dinkes Banyumas Oktober 2026 (Sheet DBD-14)
+2026,11,NOPEMBER,,,,,,,Data Belum Tersedia,INTERNAL_BELUM_DIIZINKAN,Workbook EDBD Dinkes Banyumas Oktober 2026 (Sheet DBD-14)
+2026,12,DESEMBER,,,,,,,Data Belum Tersedia,INTERNAL_BELUM_DIIZINKAN,Workbook EDBD Dinkes Banyumas Oktober 2026 (Sheet DBD-14)

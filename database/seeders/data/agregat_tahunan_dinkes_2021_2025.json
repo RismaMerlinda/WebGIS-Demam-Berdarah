@@ -1,0 +1,1417 @@
+{
+  "2021": {
+    "year": 2021,
+    "name": "Data Tahunan 2021",
+    "tipe_periode": "annual",
+    "rentang_waktu": "1 Tahun Penuh (Januari \u2013 Desember 2021)",
+    "is_published": true,
+    "status_publikasi": "DAPAT_DIPUBLIKASIKAN",
+    "sumber_data": "Profil Kesehatan Kabupaten Banyumas 2021 (Tabel 65, Hal 168)",
+    "status_kelengkapan": "Lengkap (27 Kecamatan)",
+    "keterangan": "Data resmi Profil Kesehatan Kabupaten Banyumas Tahun 2021. Total kasus: 263, kematian: 20, IR: 13,9 per 100.000 penduduk.",
+    "districts": [
+      {
+        "kode": "330201",
+        "nama": "Lumbir",
+        "kasus_l": 1,
+        "kasus_p": 2,
+        "kasus": 3,
+        "meninggal": 0,
+        "penduduk": 54657,
+        "incidence_rate": 5.49
+      },
+      {
+        "kode": "330202",
+        "nama": "Wangon",
+        "kasus_l": 8,
+        "kasus_p": 15,
+        "kasus": 23,
+        "meninggal": 1,
+        "penduduk": 89578,
+        "incidence_rate": 25.68
+      },
+      {
+        "kode": "330203",
+        "nama": "Jatilawang",
+        "kasus_l": 7,
+        "kasus_p": 9,
+        "kasus": 16,
+        "meninggal": 1,
+        "penduduk": 73267,
+        "incidence_rate": 21.84
+      },
+      {
+        "kode": "330204",
+        "nama": "Rawalo",
+        "kasus_l": 3,
+        "kasus_p": 5,
+        "kasus": 8,
+        "meninggal": 0,
+        "penduduk": 57526,
+        "incidence_rate": 13.91
+      },
+      {
+        "kode": "330205",
+        "nama": "Kebasen",
+        "kasus_l": 7,
+        "kasus_p": 5,
+        "kasus": 12,
+        "meninggal": 0,
+        "penduduk": 72020,
+        "incidence_rate": 16.66
+      },
+      {
+        "kode": "330206",
+        "nama": "Kemranjen",
+        "kasus_l": 2,
+        "kasus_p": 1,
+        "kasus": 3,
+        "meninggal": 0,
+        "penduduk": 78442,
+        "incidence_rate": 3.82
+      },
+      {
+        "kode": "330207",
+        "nama": "Sumpiuh",
+        "kasus_l": 0,
+        "kasus_p": 3,
+        "kasus": 3,
+        "meninggal": 1,
+        "penduduk": 62415,
+        "incidence_rate": 4.81
+      },
+      {
+        "kode": "330208",
+        "nama": "Tambak",
+        "kasus_l": 1,
+        "kasus_p": 0,
+        "kasus": 1,
+        "meninggal": 1,
+        "penduduk": 54454,
+        "incidence_rate": 1.84
+      },
+      {
+        "kode": "330209",
+        "nama": "Somagede",
+        "kasus_l": 5,
+        "kasus_p": 0,
+        "kasus": 5,
+        "meninggal": 0,
+        "penduduk": 40557,
+        "incidence_rate": 12.33
+      },
+      {
+        "kode": "330210",
+        "nama": "Kalibagor",
+        "kasus_l": 3,
+        "kasus_p": 6,
+        "kasus": 9,
+        "meninggal": 1,
+        "penduduk": 60507,
+        "incidence_rate": 14.87
+      },
+      {
+        "kode": "330211",
+        "nama": "Banyumas",
+        "kasus_l": 4,
+        "kasus_p": 4,
+        "kasus": 8,
+        "meninggal": 0,
+        "penduduk": 56844,
+        "incidence_rate": 14.07
+      },
+      {
+        "kode": "330212",
+        "nama": "Patikraja",
+        "kasus_l": 7,
+        "kasus_p": 8,
+        "kasus": 15,
+        "meninggal": 4,
+        "penduduk": 63465,
+        "incidence_rate": 23.64
+      },
+      {
+        "kode": "330213",
+        "nama": "Purwojati",
+        "kasus_l": 1,
+        "kasus_p": 1,
+        "kasus": 2,
+        "meninggal": 0,
+        "penduduk": 40300,
+        "incidence_rate": 4.96
+      },
+      {
+        "kode": "330214",
+        "nama": "Ajibarang",
+        "kasus_l": 4,
+        "kasus_p": 4,
+        "kasus": 8,
+        "meninggal": 2,
+        "penduduk": 110005,
+        "incidence_rate": 7.27
+      },
+      {
+        "kode": "330215",
+        "nama": "Gumelar",
+        "kasus_l": 1,
+        "kasus_p": 1,
+        "kasus": 2,
+        "meninggal": 0,
+        "penduduk": 57798,
+        "incidence_rate": 3.46
+      },
+      {
+        "kode": "330216",
+        "nama": "Pekuncen",
+        "kasus_l": 2,
+        "kasus_p": 3,
+        "kasus": 5,
+        "meninggal": 0,
+        "penduduk": 81372,
+        "incidence_rate": 6.14
+      },
+      {
+        "kode": "330217",
+        "nama": "Cilongok",
+        "kasus_l": 0,
+        "kasus_p": 3,
+        "kasus": 3,
+        "meninggal": 1,
+        "penduduk": 133897,
+        "incidence_rate": 2.24
+      },
+      {
+        "kode": "330218",
+        "nama": "Karanglewas",
+        "kasus_l": 10,
+        "kasus_p": 12,
+        "kasus": 22,
+        "meninggal": 0,
+        "penduduk": 70507,
+        "incidence_rate": 31.2
+      },
+      {
+        "kode": "330219",
+        "nama": "Kedungbanteng",
+        "kasus_l": 6,
+        "kasus_p": 3,
+        "kasus": 9,
+        "meninggal": 2,
+        "penduduk": 49920,
+        "incidence_rate": 18.03
+      },
+      {
+        "kode": "330220",
+        "nama": "Baturraden",
+        "kasus_l": 5,
+        "kasus_p": 8,
+        "kasus": 13,
+        "meninggal": 0,
+        "penduduk": 59861,
+        "incidence_rate": 21.72
+      },
+      {
+        "kode": "330221",
+        "nama": "Sumbang",
+        "kasus_l": 2,
+        "kasus_p": 6,
+        "kasus": 8,
+        "meninggal": 1,
+        "penduduk": 55535,
+        "incidence_rate": 14.41
+      },
+      {
+        "kode": "330222",
+        "nama": "Kembaran",
+        "kasus_l": 10,
+        "kasus_p": 9,
+        "kasus": 19,
+        "meninggal": 0,
+        "penduduk": 76943,
+        "incidence_rate": 24.69
+      },
+      {
+        "kode": "330223",
+        "nama": "Sokaraja",
+        "kasus_l": 7,
+        "kasus_p": 10,
+        "kasus": 17,
+        "meninggal": 1,
+        "penduduk": 65485,
+        "incidence_rate": 25.96
+      },
+      {
+        "kode": "330224",
+        "nama": "Purwokerto Selatan",
+        "kasus_l": 9,
+        "kasus_p": 6,
+        "kasus": 15,
+        "meninggal": 0,
+        "penduduk": 56947,
+        "incidence_rate": 26.34
+      },
+      {
+        "kode": "330225",
+        "nama": "Purwokerto Barat",
+        "kasus_l": 7,
+        "kasus_p": 4,
+        "kasus": 11,
+        "meninggal": 2,
+        "penduduk": 93929,
+        "incidence_rate": 11.71
+      },
+      {
+        "kode": "330226",
+        "nama": "Purwokerto Timur",
+        "kasus_l": 4,
+        "kasus_p": 9,
+        "kasus": 13,
+        "meninggal": 2,
+        "penduduk": 84838,
+        "incidence_rate": 15.32
+      },
+      {
+        "kode": "330227",
+        "nama": "Purwokerto Utara",
+        "kasus_l": 7,
+        "kasus_p": 3,
+        "kasus": 10,
+        "meninggal": 0,
+        "penduduk": 98127,
+        "incidence_rate": 10.19
+      }
+    ]
+  },
+  "2022": {
+    "year": 2022,
+    "name": "Data Tahunan 2022",
+    "tipe_periode": "annual",
+    "rentang_waktu": "1 Tahun Penuh (Januari \u2013 Desember 2022)",
+    "is_published": true,
+    "status_publikasi": "DAPAT_DIPUBLIKASIKAN",
+    "sumber_data": "Profil Kesehatan Kabupaten Banyumas 2022 (Tabel 72, Hal 193)",
+    "status_kelengkapan": "Lengkap (27 Kecamatan)",
+    "keterangan": "Data resmi Profil Kesehatan Kabupaten Banyumas Tahun 2022. Total kasus: 307, kematian: 13, IR: 16,7 per 100.000 penduduk.",
+    "districts": [
+      {
+        "kode": "330201",
+        "nama": "Lumbir",
+        "kasus_l": 1,
+        "kasus_p": 0,
+        "kasus": 1,
+        "meninggal": 0,
+        "penduduk": 52859,
+        "incidence_rate": 1.89
+      },
+      {
+        "kode": "330202",
+        "nama": "Wangon",
+        "kasus_l": 20,
+        "kasus_p": 7,
+        "kasus": 27,
+        "meninggal": 2,
+        "penduduk": 86877,
+        "incidence_rate": 31.08
+      },
+      {
+        "kode": "330203",
+        "nama": "Jatilawang",
+        "kasus_l": 3,
+        "kasus_p": 8,
+        "kasus": 11,
+        "meninggal": 1,
+        "penduduk": 70481,
+        "incidence_rate": 15.61
+      },
+      {
+        "kode": "330204",
+        "nama": "Rawalo",
+        "kasus_l": 3,
+        "kasus_p": 4,
+        "kasus": 7,
+        "meninggal": 0,
+        "penduduk": 55523,
+        "incidence_rate": 12.61
+      },
+      {
+        "kode": "330205",
+        "nama": "Kebasen",
+        "kasus_l": 3,
+        "kasus_p": 0,
+        "kasus": 3,
+        "meninggal": 0,
+        "penduduk": 70498,
+        "incidence_rate": 4.26
+      },
+      {
+        "kode": "330206",
+        "nama": "Kemranjen",
+        "kasus_l": 2,
+        "kasus_p": 5,
+        "kasus": 7,
+        "meninggal": 0,
+        "penduduk": 76001,
+        "incidence_rate": 9.21
+      },
+      {
+        "kode": "330207",
+        "nama": "Sumpiuh",
+        "kasus_l": 2,
+        "kasus_p": 2,
+        "kasus": 4,
+        "meninggal": 0,
+        "penduduk": 60563,
+        "incidence_rate": 6.6
+      },
+      {
+        "kode": "330208",
+        "nama": "Tambak",
+        "kasus_l": 1,
+        "kasus_p": 1,
+        "kasus": 2,
+        "meninggal": 0,
+        "penduduk": 52574,
+        "incidence_rate": 3.8
+      },
+      {
+        "kode": "330209",
+        "nama": "Somagede",
+        "kasus_l": 3,
+        "kasus_p": 1,
+        "kasus": 4,
+        "meninggal": 0,
+        "penduduk": 3941,
+        "incidence_rate": 101.5
+      },
+      {
+        "kode": "330210",
+        "nama": "Kalibagor",
+        "kasus_l": 4,
+        "kasus_p": 5,
+        "kasus": 9,
+        "meninggal": 1,
+        "penduduk": 58224,
+        "incidence_rate": 15.46
+      },
+      {
+        "kode": "330211",
+        "nama": "Banyumas",
+        "kasus_l": 4,
+        "kasus_p": 6,
+        "kasus": 10,
+        "meninggal": 1,
+        "penduduk": 55191,
+        "incidence_rate": 18.12
+      },
+      {
+        "kode": "330212",
+        "nama": "Patikraja",
+        "kasus_l": 4,
+        "kasus_p": 11,
+        "kasus": 15,
+        "meninggal": 1,
+        "penduduk": 61872,
+        "incidence_rate": 24.24
+      },
+      {
+        "kode": "330213",
+        "nama": "Purwojati",
+        "kasus_l": 0,
+        "kasus_p": 1,
+        "kasus": 1,
+        "meninggal": 0,
+        "penduduk": 39007,
+        "incidence_rate": 2.56
+      },
+      {
+        "kode": "330214",
+        "nama": "Ajibarang",
+        "kasus_l": 8,
+        "kasus_p": 12,
+        "kasus": 20,
+        "meninggal": 1,
+        "penduduk": 108818,
+        "incidence_rate": 18.38
+      },
+      {
+        "kode": "330215",
+        "nama": "Gumelar",
+        "kasus_l": 1,
+        "kasus_p": 5,
+        "kasus": 6,
+        "meninggal": 1,
+        "penduduk": 55726,
+        "incidence_rate": 10.77
+      },
+      {
+        "kode": "330216",
+        "nama": "Pekuncen",
+        "kasus_l": 3,
+        "kasus_p": 5,
+        "kasus": 8,
+        "meninggal": 0,
+        "penduduk": 78897,
+        "incidence_rate": 10.14
+      },
+      {
+        "kode": "330217",
+        "nama": "Cilongok",
+        "kasus_l": 4,
+        "kasus_p": 5,
+        "kasus": 9,
+        "meninggal": 0,
+        "penduduk": 130502,
+        "incidence_rate": 6.9
+      },
+      {
+        "kode": "330218",
+        "nama": "Karanglewas",
+        "kasus_l": 11,
+        "kasus_p": 7,
+        "kasus": 18,
+        "meninggal": 0,
+        "penduduk": 68398,
+        "incidence_rate": 26.32
+      },
+      {
+        "kode": "330219",
+        "nama": "Kedungbanteng",
+        "kasus_l": 6,
+        "kasus_p": 2,
+        "kasus": 8,
+        "meninggal": 1,
+        "penduduk": 63967,
+        "incidence_rate": 12.51
+      },
+      {
+        "kode": "330220",
+        "nama": "Baturraden",
+        "kasus_l": 7,
+        "kasus_p": 8,
+        "kasus": 15,
+        "meninggal": 0,
+        "penduduk": 55502,
+        "incidence_rate": 27.03
+      },
+      {
+        "kode": "330221",
+        "nama": "Sumbang",
+        "kasus_l": 12,
+        "kasus_p": 7,
+        "kasus": 19,
+        "meninggal": 0,
+        "penduduk": 96329,
+        "incidence_rate": 19.72
+      },
+      {
+        "kode": "330222",
+        "nama": "Kembaran",
+        "kasus_l": 11,
+        "kasus_p": 3,
+        "kasus": 14,
+        "meninggal": 1,
+        "penduduk": 82327,
+        "incidence_rate": 17.01
+      },
+      {
+        "kode": "330223",
+        "nama": "Sokaraja",
+        "kasus_l": 10,
+        "kasus_p": 11,
+        "kasus": 21,
+        "meninggal": 1,
+        "penduduk": 91157,
+        "incidence_rate": 23.04
+      },
+      {
+        "kode": "330224",
+        "nama": "Purwokerto Selatan",
+        "kasus_l": 6,
+        "kasus_p": 3,
+        "kasus": 9,
+        "meninggal": 1,
+        "penduduk": 74371,
+        "incidence_rate": 12.1
+      },
+      {
+        "kode": "330225",
+        "nama": "Purwokerto Barat",
+        "kasus_l": 8,
+        "kasus_p": 17,
+        "kasus": 25,
+        "meninggal": 1,
+        "penduduk": 53429,
+        "incidence_rate": 46.79
+      },
+      {
+        "kode": "330226",
+        "nama": "Purwokerto Timur",
+        "kasus_l": 6,
+        "kasus_p": 12,
+        "kasus": 18,
+        "meninggal": 0,
+        "penduduk": 57997,
+        "incidence_rate": 31.04
+      },
+      {
+        "kode": "330227",
+        "nama": "Purwokerto Utara",
+        "kasus_l": 13,
+        "kasus_p": 3,
+        "kasus": 16,
+        "meninggal": 0,
+        "penduduk": 48082,
+        "incidence_rate": 33.28
+      }
+    ]
+  },
+  "2023": {
+    "year": 2023,
+    "name": "Data Tahunan 2023",
+    "tipe_periode": "annual",
+    "rentang_waktu": "1 Tahun Penuh (Januari \u2013 Desember 2023)",
+    "is_published": true,
+    "status_publikasi": "DAPAT_DIPUBLIKASIKAN",
+    "sumber_data": "Profil Kesehatan Kabupaten Banyumas 2023 (Tabel 72, Hal 239)",
+    "status_kelengkapan": "Lengkap (27 Kecamatan)",
+    "keterangan": "Data resmi Profil Kesehatan Kabupaten Banyumas Tahun 2023. Total kasus: 273, kematian: 4, IR: 14,7 per 100.000 penduduk.",
+    "districts": [
+      {
+        "kode": "330201",
+        "nama": "Lumbir",
+        "kasus_l": 3,
+        "kasus_p": 1,
+        "kasus": 4,
+        "meninggal": 0,
+        "penduduk": 53183,
+        "incidence_rate": 7.52
+      },
+      {
+        "kode": "330202",
+        "nama": "Wangon",
+        "kasus_l": 9,
+        "kasus_p": 7,
+        "kasus": 16,
+        "meninggal": 1,
+        "penduduk": 87782,
+        "incidence_rate": 18.23
+      },
+      {
+        "kode": "330203",
+        "nama": "Jatilawang",
+        "kasus_l": 2,
+        "kasus_p": 1,
+        "kasus": 3,
+        "meninggal": 0,
+        "penduduk": 71002,
+        "incidence_rate": 4.23
+      },
+      {
+        "kode": "330204",
+        "nama": "Rawalo",
+        "kasus_l": 2,
+        "kasus_p": 1,
+        "kasus": 3,
+        "meninggal": 0,
+        "penduduk": 56064,
+        "incidence_rate": 5.35
+      },
+      {
+        "kode": "330205",
+        "nama": "Kebasen",
+        "kasus_l": 3,
+        "kasus_p": 1,
+        "kasus": 4,
+        "meninggal": 0,
+        "penduduk": 71324,
+        "incidence_rate": 5.61
+      },
+      {
+        "kode": "330206",
+        "nama": "Kemranjen",
+        "kasus_l": 6,
+        "kasus_p": 2,
+        "kasus": 8,
+        "meninggal": 0,
+        "penduduk": 76639,
+        "incidence_rate": 10.44
+      },
+      {
+        "kode": "330207",
+        "nama": "Sumpiuh",
+        "kasus_l": 2,
+        "kasus_p": 0,
+        "kasus": 2,
+        "meninggal": 0,
+        "penduduk": 60896,
+        "incidence_rate": 3.28
+      },
+      {
+        "kode": "330208",
+        "nama": "Tambak",
+        "kasus_l": 1,
+        "kasus_p": 4,
+        "kasus": 5,
+        "meninggal": 0,
+        "penduduk": 52972,
+        "incidence_rate": 9.44
+      },
+      {
+        "kode": "330209",
+        "nama": "Somagede",
+        "kasus_l": 2,
+        "kasus_p": 0,
+        "kasus": 2,
+        "meninggal": 0,
+        "penduduk": 39672,
+        "incidence_rate": 5.04
+      },
+      {
+        "kode": "330210",
+        "nama": "Kalibagor",
+        "kasus_l": 4,
+        "kasus_p": 3,
+        "kasus": 7,
+        "meninggal": 0,
+        "penduduk": 58785,
+        "incidence_rate": 11.91
+      },
+      {
+        "kode": "330211",
+        "nama": "Banyumas",
+        "kasus_l": 9,
+        "kasus_p": 2,
+        "kasus": 11,
+        "meninggal": 0,
+        "penduduk": 55528,
+        "incidence_rate": 19.81
+      },
+      {
+        "kode": "330212",
+        "nama": "Patikraja",
+        "kasus_l": 7,
+        "kasus_p": 6,
+        "kasus": 13,
+        "meninggal": 0,
+        "penduduk": 62391,
+        "incidence_rate": 20.84
+      },
+      {
+        "kode": "330213",
+        "nama": "Purwojati",
+        "kasus_l": 0,
+        "kasus_p": 2,
+        "kasus": 2,
+        "meninggal": 0,
+        "penduduk": 39294,
+        "incidence_rate": 5.09
+      },
+      {
+        "kode": "330214",
+        "nama": "Ajibarang",
+        "kasus_l": 4,
+        "kasus_p": 5,
+        "kasus": 9,
+        "meninggal": 0,
+        "penduduk": 10779,
+        "incidence_rate": 83.5
+      },
+      {
+        "kode": "330215",
+        "nama": "Gumelar",
+        "kasus_l": 1,
+        "kasus_p": 1,
+        "kasus": 2,
+        "meninggal": 0,
+        "penduduk": 56157,
+        "incidence_rate": 3.56
+      },
+      {
+        "kode": "330216",
+        "nama": "Pekuncen",
+        "kasus_l": 1,
+        "kasus_p": 0,
+        "kasus": 1,
+        "meninggal": 0,
+        "penduduk": 79196,
+        "incidence_rate": 1.26
+      },
+      {
+        "kode": "330217",
+        "nama": "Cilongok",
+        "kasus_l": 9,
+        "kasus_p": 6,
+        "kasus": 15,
+        "meninggal": 0,
+        "penduduk": 131829,
+        "incidence_rate": 11.38
+      },
+      {
+        "kode": "330218",
+        "nama": "Karanglewas",
+        "kasus_l": 15,
+        "kasus_p": 5,
+        "kasus": 20,
+        "meninggal": 1,
+        "penduduk": 69197,
+        "incidence_rate": 28.9
+      },
+      {
+        "kode": "330219",
+        "nama": "Kedungbanteng",
+        "kasus_l": 8,
+        "kasus_p": 13,
+        "kasus": 21,
+        "meninggal": 0,
+        "penduduk": 64508,
+        "incidence_rate": 32.55
+      },
+      {
+        "kode": "330220",
+        "nama": "Baturraden",
+        "kasus_l": 6,
+        "kasus_p": 3,
+        "kasus": 9,
+        "meninggal": 0,
+        "penduduk": 55894,
+        "incidence_rate": 16.1
+      },
+      {
+        "kode": "330221",
+        "nama": "Sumbang",
+        "kasus_l": 5,
+        "kasus_p": 4,
+        "kasus": 9,
+        "meninggal": 0,
+        "penduduk": 97756,
+        "incidence_rate": 9.21
+      },
+      {
+        "kode": "330222",
+        "nama": "Kembaran",
+        "kasus_l": 11,
+        "kasus_p": 12,
+        "kasus": 23,
+        "meninggal": 0,
+        "penduduk": 82897,
+        "incidence_rate": 27.75
+      },
+      {
+        "kode": "330223",
+        "nama": "Sokaraja",
+        "kasus_l": 11,
+        "kasus_p": 16,
+        "kasus": 27,
+        "meninggal": 1,
+        "penduduk": 91988,
+        "incidence_rate": 29.35
+      },
+      {
+        "kode": "330224",
+        "nama": "Purwokerto Selatan",
+        "kasus_l": 13,
+        "kasus_p": 6,
+        "kasus": 19,
+        "meninggal": 1,
+        "penduduk": 74305,
+        "incidence_rate": 25.57
+      },
+      {
+        "kode": "330225",
+        "nama": "Purwokerto Barat",
+        "kasus_l": 10,
+        "kasus_p": 9,
+        "kasus": 19,
+        "meninggal": 0,
+        "penduduk": 53447,
+        "incidence_rate": 35.55
+      },
+      {
+        "kode": "330226",
+        "nama": "Purwokerto Timur",
+        "kasus_l": 5,
+        "kasus_p": 3,
+        "kasus": 8,
+        "meninggal": 0,
+        "penduduk": 58451,
+        "incidence_rate": 13.69
+      },
+      {
+        "kode": "330227",
+        "nama": "Purwokerto Utara",
+        "kasus_l": 5,
+        "kasus_p": 6,
+        "kasus": 11,
+        "meninggal": 0,
+        "penduduk": 48264,
+        "incidence_rate": 22.79
+      }
+    ]
+  },
+  "2024": {
+    "year": 2024,
+    "name": "Data Tahunan 2024",
+    "tipe_periode": "annual",
+    "rentang_waktu": "1 Tahun Penuh (Januari \u2013 Desember 2024)",
+    "is_published": true,
+    "status_publikasi": "DAPAT_DIPUBLIKASIKAN",
+    "sumber_data": "Profil Kesehatan Kabupaten Banyumas 2024 (Tabel 72, Hal 267-268)",
+    "status_kelengkapan": "Lengkap (27 Kecamatan)",
+    "keterangan": "Data resmi Profil Kesehatan Kabupaten Banyumas Tahun 2024. Total kasus: 2.180, kematian: 12, IR: 116,7 per 100.000 penduduk.",
+    "districts": [
+      {
+        "kode": "330201",
+        "nama": "Lumbir",
+        "kasus_l": 35,
+        "kasus_p": 22,
+        "kasus": 57,
+        "meninggal": 0,
+        "penduduk": 53382,
+        "incidence_rate": 106.78
+      },
+      {
+        "kode": "330202",
+        "nama": "Wangon",
+        "kasus_l": 73,
+        "kasus_p": 53,
+        "kasus": 126,
+        "meninggal": 0,
+        "penduduk": 88122,
+        "incidence_rate": 142.98
+      },
+      {
+        "kode": "330203",
+        "nama": "Jatilawang",
+        "kasus_l": 72,
+        "kasus_p": 49,
+        "kasus": 121,
+        "meninggal": 0,
+        "penduduk": 71191,
+        "incidence_rate": 169.97
+      },
+      {
+        "kode": "330204",
+        "nama": "Rawalo",
+        "kasus_l": 63,
+        "kasus_p": 55,
+        "kasus": 118,
+        "meninggal": 2,
+        "penduduk": 56466,
+        "incidence_rate": 208.98
+      },
+      {
+        "kode": "330205",
+        "nama": "Kebasen",
+        "kasus_l": 44,
+        "kasus_p": 28,
+        "kasus": 72,
+        "meninggal": 0,
+        "penduduk": 71845,
+        "incidence_rate": 100.22
+      },
+      {
+        "kode": "330206",
+        "nama": "Kemranjen",
+        "kasus_l": 43,
+        "kasus_p": 25,
+        "kasus": 68,
+        "meninggal": 0,
+        "penduduk": 77065,
+        "incidence_rate": 88.24
+      },
+      {
+        "kode": "330207",
+        "nama": "Sumpiuh",
+        "kasus_l": 9,
+        "kasus_p": 12,
+        "kasus": 21,
+        "meninggal": 0,
+        "penduduk": 61152,
+        "incidence_rate": 34.34
+      },
+      {
+        "kode": "330208",
+        "nama": "Tambak",
+        "kasus_l": 21,
+        "kasus_p": 13,
+        "kasus": 34,
+        "meninggal": 0,
+        "penduduk": 53283,
+        "incidence_rate": 63.81
+      },
+      {
+        "kode": "330209",
+        "nama": "Somagede",
+        "kasus_l": 33,
+        "kasus_p": 12,
+        "kasus": 45,
+        "meninggal": 0,
+        "penduduk": 39817,
+        "incidence_rate": 113.02
+      },
+      {
+        "kode": "330210",
+        "nama": "Kalibagor",
+        "kasus_l": 63,
+        "kasus_p": 38,
+        "kasus": 101,
+        "meninggal": 0,
+        "penduduk": 59228,
+        "incidence_rate": 170.53
+      },
+      {
+        "kode": "330211",
+        "nama": "Banyumas",
+        "kasus_l": 39,
+        "kasus_p": 21,
+        "kasus": 60,
+        "meninggal": 0,
+        "penduduk": 55967,
+        "incidence_rate": 107.21
+      },
+      {
+        "kode": "330212",
+        "nama": "Patikraja",
+        "kasus_l": 54,
+        "kasus_p": 36,
+        "kasus": 90,
+        "meninggal": 1,
+        "penduduk": 62930,
+        "incidence_rate": 143.02
+      },
+      {
+        "kode": "330213",
+        "nama": "Purwojati",
+        "kasus_l": 36,
+        "kasus_p": 30,
+        "kasus": 66,
+        "meninggal": 0,
+        "penduduk": 39440,
+        "incidence_rate": 167.34
+      },
+      {
+        "kode": "330214",
+        "nama": "Ajibarang",
+        "kasus_l": 41,
+        "kasus_p": 27,
+        "kasus": 68,
+        "meninggal": 1,
+        "penduduk": 108412,
+        "incidence_rate": 62.72
+      },
+      {
+        "kode": "330215",
+        "nama": "Gumelar",
+        "kasus_l": 15,
+        "kasus_p": 13,
+        "kasus": 28,
+        "meninggal": 0,
+        "penduduk": 56117,
+        "incidence_rate": 49.9
+      },
+      {
+        "kode": "330216",
+        "nama": "Pekuncen",
+        "kasus_l": 29,
+        "kasus_p": 15,
+        "kasus": 44,
+        "meninggal": 0,
+        "penduduk": 79358,
+        "incidence_rate": 55.44
+      },
+      {
+        "kode": "330217",
+        "nama": "Cilongok",
+        "kasus_l": 75,
+        "kasus_p": 51,
+        "kasus": 126,
+        "meninggal": 1,
+        "penduduk": 132799,
+        "incidence_rate": 94.88
+      },
+      {
+        "kode": "330218",
+        "nama": "Karanglewas",
+        "kasus_l": 70,
+        "kasus_p": 47,
+        "kasus": 117,
+        "meninggal": 1,
+        "penduduk": 69870,
+        "incidence_rate": 167.45
+      },
+      {
+        "kode": "330219",
+        "nama": "Kedungbanteng",
+        "kasus_l": 56,
+        "kasus_p": 38,
+        "kasus": 94,
+        "meninggal": 2,
+        "penduduk": 65111,
+        "incidence_rate": 144.37
+      },
+      {
+        "kode": "330220",
+        "nama": "Baturraden",
+        "kasus_l": 50,
+        "kasus_p": 40,
+        "kasus": 90,
+        "meninggal": 1,
+        "penduduk": 56183,
+        "incidence_rate": 160.19
+      },
+      {
+        "kode": "330221",
+        "nama": "Sumbang",
+        "kasus_l": 35,
+        "kasus_p": 27,
+        "kasus": 62,
+        "meninggal": 1,
+        "penduduk": 98948,
+        "incidence_rate": 62.66
+      },
+      {
+        "kode": "330222",
+        "nama": "Kembaran",
+        "kasus_l": 64,
+        "kasus_p": 54,
+        "kasus": 118,
+        "meninggal": 0,
+        "penduduk": 83637,
+        "incidence_rate": 141.09
+      },
+      {
+        "kode": "330223",
+        "nama": "Sokaraja",
+        "kasus_l": 82,
+        "kasus_p": 57,
+        "kasus": 139,
+        "meninggal": 0,
+        "penduduk": 92626,
+        "incidence_rate": 150.07
+      },
+      {
+        "kode": "330224",
+        "nama": "Purwokerto Selatan",
+        "kasus_l": 84,
+        "kasus_p": 45,
+        "kasus": 129,
+        "meninggal": 2,
+        "penduduk": 74482,
+        "incidence_rate": 173.2
+      },
+      {
+        "kode": "330225",
+        "nama": "Purwokerto Barat",
+        "kasus_l": 49,
+        "kasus_p": 32,
+        "kasus": 81,
+        "meninggal": 0,
+        "penduduk": 53603,
+        "incidence_rate": 151.11
+      },
+      {
+        "kode": "330226",
+        "nama": "Purwokerto Timur",
+        "kasus_l": 33,
+        "kasus_p": 27,
+        "kasus": 60,
+        "meninggal": 0,
+        "penduduk": 58915,
+        "incidence_rate": 101.84
+      },
+      {
+        "kode": "330227",
+        "nama": "Purwokerto Utara",
+        "kasus_l": 24,
+        "kasus_p": 21,
+        "kasus": 45,
+        "meninggal": 0,
+        "penduduk": 48497,
+        "incidence_rate": 92.79
+      }
+    ]
+  },
+  "2025": {
+    "year": 2025,
+    "name": "Data Tahunan 2025",
+    "tipe_periode": "annual",
+    "rentang_waktu": "1 Tahun Penuh (Januari \u2013 Desember 2025)",
+    "is_published": true,
+    "status_publikasi": "DAPAT_DIPUBLIKASIKAN",
+    "sumber_data": "Profil Kesehatan Kabupaten Banyumas 2025 (Tabel 72, Hal 272)",
+    "status_kelengkapan": "Lengkap (27 Kecamatan)",
+    "keterangan": "Data resmi Profil Kesehatan Kabupaten Banyumas Tahun 2025. Total kasus: 1.062, kematian: 8, IR: 56,6 per 100.000 penduduk.",
+    "districts": [
+      {
+        "kode": "330201",
+        "nama": "Lumbir",
+        "kasus_l": 9,
+        "kasus_p": 4,
+        "kasus": 13,
+        "meninggal": 0,
+        "penduduk": 53475,
+        "incidence_rate": 24.31
+      },
+      {
+        "kode": "330202",
+        "nama": "Wangon",
+        "kasus_l": 29,
+        "kasus_p": 31,
+        "kasus": 60,
+        "meninggal": 0,
+        "penduduk": 88489,
+        "incidence_rate": 67.81
+      },
+      {
+        "kode": "330203",
+        "nama": "Jatilawang",
+        "kasus_l": 51,
+        "kasus_p": 22,
+        "kasus": 73,
+        "meninggal": 0,
+        "penduduk": 71636,
+        "incidence_rate": 101.9
+      },
+      {
+        "kode": "330204",
+        "nama": "Rawalo",
+        "kasus_l": 36,
+        "kasus_p": 22,
+        "kasus": 58,
+        "meninggal": 1,
+        "penduduk": 56523,
+        "incidence_rate": 102.61
+      },
+      {
+        "kode": "330205",
+        "nama": "Kebasen",
+        "kasus_l": 28,
+        "kasus_p": 12,
+        "kasus": 40,
+        "meninggal": 1,
+        "penduduk": 72300,
+        "incidence_rate": 55.33
+      },
+      {
+        "kode": "330206",
+        "nama": "Kemranjen",
+        "kasus_l": 21,
+        "kasus_p": 15,
+        "kasus": 36,
+        "meninggal": 0,
+        "penduduk": 77544,
+        "incidence_rate": 46.43
+      },
+      {
+        "kode": "330207",
+        "nama": "Sumpiuh",
+        "kasus_l": 6,
+        "kasus_p": 7,
+        "kasus": 13,
+        "meninggal": 0,
+        "penduduk": 61375,
+        "incidence_rate": 21.18
+      },
+      {
+        "kode": "330208",
+        "nama": "Tambak",
+        "kasus_l": 5,
+        "kasus_p": 5,
+        "kasus": 10,
+        "meninggal": 0,
+        "penduduk": 53475,
+        "incidence_rate": 18.7
+      },
+      {
+        "kode": "330209",
+        "nama": "Somagede",
+        "kasus_l": 20,
+        "kasus_p": 7,
+        "kasus": 27,
+        "meninggal": 0,
+        "penduduk": 39938,
+        "incidence_rate": 67.6
+      },
+      {
+        "kode": "330210",
+        "nama": "Kalibagor",
+        "kasus_l": 19,
+        "kasus_p": 18,
+        "kasus": 37,
+        "meninggal": 0,
+        "penduduk": 59572,
+        "incidence_rate": 62.11
+      },
+      {
+        "kode": "330211",
+        "nama": "Banyumas",
+        "kasus_l": 45,
+        "kasus_p": 18,
+        "kasus": 63,
+        "meninggal": 0,
+        "penduduk": 56175,
+        "incidence_rate": 112.15
+      },
+      {
+        "kode": "330212",
+        "nama": "Patikraja",
+        "kasus_l": 22,
+        "kasus_p": 18,
+        "kasus": 40,
+        "meninggal": 1,
+        "penduduk": 63376,
+        "incidence_rate": 63.12
+      },
+      {
+        "kode": "330213",
+        "nama": "Purwojati",
+        "kasus_l": 4,
+        "kasus_p": 5,
+        "kasus": 9,
+        "meninggal": 0,
+        "penduduk": 39506,
+        "incidence_rate": 22.78
+      },
+      {
+        "kode": "330214",
+        "nama": "Ajibarang",
+        "kasus_l": 19,
+        "kasus_p": 26,
+        "kasus": 45,
+        "meninggal": 1,
+        "penduduk": 108739,
+        "incidence_rate": 41.38
+      },
+      {
+        "kode": "330215",
+        "nama": "Gumelar",
+        "kasus_l": 2,
+        "kasus_p": 4,
+        "kasus": 6,
+        "meninggal": 0,
+        "penduduk": 56066,
+        "incidence_rate": 10.7
+      },
+      {
+        "kode": "330216",
+        "nama": "Pekuncen",
+        "kasus_l": 22,
+        "kasus_p": 23,
+        "kasus": 45,
+        "meninggal": 0,
+        "penduduk": 79708,
+        "incidence_rate": 56.46
+      },
+      {
+        "kode": "330217",
+        "nama": "Cilongok",
+        "kasus_l": 27,
+        "kasus_p": 25,
+        "kasus": 52,
+        "meninggal": 1,
+        "penduduk": 133602,
+        "incidence_rate": 38.92
+      },
+      {
+        "kode": "330218",
+        "nama": "Karanglewas",
+        "kasus_l": 45,
+        "kasus_p": 31,
+        "kasus": 76,
+        "meninggal": 1,
+        "penduduk": 70189,
+        "incidence_rate": 108.28
+      },
+      {
+        "kode": "330219",
+        "nama": "Kedungbanteng",
+        "kasus_l": 20,
+        "kasus_p": 16,
+        "kasus": 36,
+        "meninggal": 1,
+        "penduduk": 65484,
+        "incidence_rate": 54.98
+      },
+      {
+        "kode": "330220",
+        "nama": "Baturraden",
+        "kasus_l": 15,
+        "kasus_p": 8,
+        "kasus": 23,
+        "meninggal": 0,
+        "penduduk": 56435,
+        "incidence_rate": 40.75
+      },
+      {
+        "kode": "330221",
+        "nama": "Sumbang",
+        "kasus_l": 16,
+        "kasus_p": 16,
+        "kasus": 32,
+        "meninggal": 0,
+        "penduduk": 100053,
+        "incidence_rate": 31.98
+      },
+      {
+        "kode": "330222",
+        "nama": "Kembaran",
+        "kasus_l": 19,
+        "kasus_p": 30,
+        "kasus": 49,
+        "meninggal": 0,
+        "penduduk": 83823,
+        "incidence_rate": 58.46
+      },
+      {
+        "kode": "330223",
+        "nama": "Sokaraja",
+        "kasus_l": 46,
+        "kasus_p": 37,
+        "kasus": 83,
+        "meninggal": 0,
+        "penduduk": 92932,
+        "incidence_rate": 89.31
+      },
+      {
+        "kode": "330224",
+        "nama": "Purwokerto Selatan",
+        "kasus_l": 29,
+        "kasus_p": 35,
+        "kasus": 64,
+        "meninggal": 0,
+        "penduduk": 74653,
+        "incidence_rate": 85.73
+      },
+      {
+        "kode": "330225",
+        "nama": "Purwokerto Barat",
+        "kasus_l": 29,
+        "kasus_p": 13,
+        "kasus": 42,
+        "meninggal": 0,
+        "penduduk": 53586,
+        "incidence_rate": 78.38
+      },
+      {
+        "kode": "330226",
+        "nama": "Purwokerto Timur",
+        "kasus_l": 5,
+        "kasus_p": 7,
+        "kasus": 12,
+        "meninggal": 1,
+        "penduduk": 58806,
+        "incidence_rate": 20.41
+      },
+      {
+        "kode": "330227",
+        "nama": "Purwokerto Utara",
+        "kasus_l": 10,
+        "kasus_p": 8,
+        "kasus": 18,
+        "meninggal": 0,
+        "penduduk": 48600,
+        "incidence_rate": 37.04
+      }
+    ]
+  }
+}
