@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;
 use Throwable;
@@ -123,6 +124,71 @@ class AdminProfileController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Gagal menyimpan perubahan profil ke database.',
+                'error' => config('app.debug') ? $e->getMessage() : null,
+            ], 500);
+        }
+    }
+
+    /**
+     * Update the authenticated administrator's password (System Feature 11).
+     */
+    public function updatePassword(Request $request): JsonResponse
+    {
+        $user = $request->user();
+
+        if (! $user) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Sesi autentikasi administrator tidak ditemukan atau telah kedaluwarsa.',
+            ], 401);
+        }
+
+        $validated = $request->validate([
+            'current_password' => ['required', 'string'],
+            'password' => [
+                'required',
+                'string',
+                'min:8',
+                'max:100',
+                'confirmed',
+                'different:current_password',
+            ],
+            'password_confirmation' => ['required', 'string'],
+        ], [
+            'current_password.required' => 'Kata sandi saat ini wajib diisi.',
+            'password.required' => 'Kata sandi baru wajib diisi.',
+            'password.min' => 'Kata sandi baru minimal 8 karakter.',
+            'password.max' => 'Kata sandi baru maksimal 100 karakter.',
+            'password.confirmed' => 'Konfirmasi kata sandi baru tidak sesuai.',
+            'password.different' => 'Kata sandi baru harus berbeda dari kata sandi saat ini.',
+            'password_confirmation.required' => 'Konfirmasi kata sandi baru wajib diisi.',
+        ]);
+
+        // Verifikasi kesesuaian kata sandi saat ini
+        if (! Hash::check($validated['current_password'], $user->password)) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Kata sandi saat ini tidak sesuai.',
+                'errors' => [
+                    'current_password' => ['Kata sandi saat ini tidak sesuai.'],
+                ],
+            ], 422);
+        }
+
+        try {
+            $user->password = Hash::make($validated['password']);
+            $user->save();
+
+            return response()->json([
+                'success' => true,
+                'message' => 'Kata sandi administrator berhasil diperbarui.',
+            ]);
+        } catch (Throwable $e) {
+            report($e);
+
+            return response()->json([
+                'success' => false,
+                'message' => 'Gagal menyimpan pembaruan kata sandi ke database.',
                 'error' => config('app.debug') ? $e->getMessage() : null,
             ], 500);
         }

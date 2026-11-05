@@ -49,6 +49,9 @@ Route::prefix('api')->group(function () {
         Route::get('/admin/profile', [AdminProfileController::class, 'show']);
         Route::put('/admin/profile', [AdminProfileController::class, 'update']);
 
+        // Fitur 11: Mengubah Kata Sandi Administrator
+        Route::put('/admin/profile/password', [AdminProfileController::class, 'updatePassword']);
+
         Route::get('/admin/ping', function () {
             return response()->json([
                 'success' => true,
