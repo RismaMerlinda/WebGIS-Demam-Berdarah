@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="24" fill="#F0F9FF"/>
+  <circle cx="660" cy="120" r="110" fill="#E0F2FE"/>
+  <rect x="70" y="75" width="660" height="300" rx="22" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="2"/>
+  <circle cx="165" cy="175" r="46" fill="#0284C7"/>
+  <path d="M145 180L160 195L188 160" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="240" y="150" fill="#0C4A6E" font-family="sans-serif" font-size="22" font-weight="bold">Gerakan 1 Rumah 1 Jumantik (G1R1J)</text>
+  <text x="240" y="185" fill="#334155" font-family="sans-serif" font-size="15">Pemeriksaan jentik berkala setiap minggu oleh keluarga</text>
+  <text x="240" y="212" fill="#334155" font-family="sans-serif" font-size="15">dan kerja bakti Pemberantasan Sarang Nyamuk (PSN) di lingkungan RT/RW.</text>
+  <rect x="240" y="245" width="420" height="55" rx="12" fill="#F0F9FF" stroke="#7DD3FC"/>
+  <text x="265" y="278" fill="#0369A1" font-family="sans-serif" font-size="15" font-weight="bold">Kolaborasi Warga, Kader Jumantik, dan Puskesmas</text>
+</svg>
+

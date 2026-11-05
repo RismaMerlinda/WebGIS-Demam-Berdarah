@@ -8,10 +8,10 @@ export default function GuestRoute() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+      <div className="min-h-dvh flex items-center justify-center bg-[#fbfbfa]">
         <div className="flex flex-col items-center gap-3">
-          <Loader2 className="w-8 h-8 text-rose-600 animate-spin" />
-          <p className="text-sm text-slate-500 font-medium">Memuat...</p>
+          <Loader2 className="w-8 h-8 text-[#123027] animate-spin" />
+          <p className="text-sm text-[#4e6057] font-medium">Memuat...</p>
         </div>
       </div>
     );

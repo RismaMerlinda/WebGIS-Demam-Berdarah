@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="24" fill="#FFF1F2"/>
+  <circle cx="660" cy="110" r="140" fill="#FFE4E6"/>
+  <circle cx="150" cy="360" r="120" fill="#FECDD3" fill-opacity="0.45"/>
+  <rect x="60" y="65" width="360" height="320" rx="20" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="2"/>
+  <circle cx="120" cy="125" r="28" fill="#E11D48"/>
+  <path d="M108 125H132M120 113V137" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <rect x="165" y="108" width="180" height="14" rx="7" fill="#0F172A"/>
+  <rect x="165" y="132" width="120" height="10" rx="5" fill="#64748B"/>
+  <rect x="92" y="176" width="296" height="12" rx="6" fill="#E2E8F0"/>
+  <rect x="92" y="202" width="260" height="12" rx="6" fill="#E2E8F0"/>
+  <rect x="92" y="228" width="280" height="12" rx="6" fill="#E2E8F0"/>
+  <rect x="92" y="270" width="150" height="40" rx="10" fill="#FFE4E6"/>
+  <text x="115" y="295" fill="#BE123C" font-family="sans-serif" font-size="15" font-weight="bold">Virus Dengue</text>
+  <g transform="translate(470, 95)">
+    <circle cx="130" cy="130" r="105" fill="#FFFFFF" stroke="#F43F5E" stroke-width="4"/>
+    <circle cx="130" cy="130" r="78" fill="#FFF1F2" stroke="#FDA4AF" stroke-width="2" stroke-dasharray="6 6"/>
+    <path d="M95 135C110 110 150 110 165 135" stroke="#0F172A" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="130" cy="112" rx="22" ry="12" fill="#1E293B"/>
+    <path d="M115 112H145" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="4 4"/>
+    <ellipse cx="112" cy="92" rx="26" ry="11" transform="rotate(-25 112 92)" fill="#94A3B8" fill-opacity="0.55"/>
+    <ellipse cx="148" cy="92" rx="26" ry="11" transform="rotate(25 148 92)" fill="#94A3B8" fill-opacity="0.55"/>
+    <text x="58" y="202" fill="#9F1239" font-family="sans-serif" font-size="16" font-weight="bold">Aedes aegypti</text>
+  </g>
+</svg>
+

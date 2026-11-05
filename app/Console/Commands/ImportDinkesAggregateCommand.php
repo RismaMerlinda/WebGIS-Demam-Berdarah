@@ -15,21 +15,139 @@ class ImportDinkesAggregateCommand extends Command
      * @var string
      */
     protected $signature = 'dinkes:import-aggregate
-                            {--file= : Path to CSV aggregate file (default: database/seeders/data/agregat_kecamatan_dinkes_2026_internal.csv)}
-                            {--allow-publish : Authorize publication status to DAPAT_DIPUBLIKASIKAN (default: false)}';
+                            {--file= : Path to 2026 CSV aggregate file (default: database/seeders/data/agregat_kecamatan_dinkes_2026_internal.csv)}
+                            {--annual-json= : Path to 2022-2025 verified annual JSON file (default: database/seeders/data/agregat_tahunan_dinkes_2021_2025.json)}
+                            {--only-2026 : Only import 2026 internal dataset}
+                            {--allow-publish : Authorize 2026 internal publication status to DAPAT_DIPUBLIKASIKAN (default: false)}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Import or update verified Dinkes Banyumas 2026 aggregate data with strict privacy checks';
+    protected $description = 'Import and validate verified Dinkes Banyumas 2022-2025 annual aggregates and 2026 internal aggregate data with strict privacy checks';
+
+    /**
+     * Expected official totals reconciled from Excel & Profil Kesehatan PDFs (2022-2025).
+     */
+    private const EXPECTED_ANNUAL = [
+        2022 => ['kecamatan' => 27, 'kasus' => 307,  'l' => 156,  'p' => 151, 'meninggal' => 13, 'penduduk' => 1842582],
+        2023 => ['kecamatan' => 27, 'kasus' => 273,  'l' => 154,  'p' => 119, 'meninggal' => 4,  'penduduk' => 1857211],
+        2024 => ['kecamatan' => 27, 'kasus' => 2180, 'l' => 1292, 'p' => 888, 'meninggal' => 12, 'penduduk' => 1868446],
+        2025 => ['kecamatan' => 27, 'kasus' => 1062, 'l' => 599,  'p' => 463, 'meninggal' => 8,  'penduduk' => 1876060],
+    ];
 
     /**
      * Execute the console command.
      */
     public function handle(): int
     {
+        $allKecamatan = Kecamatan::all()->keyBy('nama');
+        if ($allKecamatan->count() !== 27) {
+            $this->error('Master data kecamatan belum lengkap (harus 27 kecamatan).');
+            return Command::FAILURE;
+        }
+
+        if (! $this->option('only-2026')) {
+            $annualJsonPath = $this->option('annual-json') ?: database_path('seeders/data/agregat_tahunan_dinkes_2021_2025.json');
+            if (! file_exists($annualJsonPath)) {
+                $this->error("Annual JSON file not found at: {$annualJsonPath}");
+                return Command::FAILURE;
+            }
+
+            $this->info("Reading and validating 2022–2025 verified annual aggregates from: {$annualJsonPath}");
+            $annualData = json_decode(file_get_contents($annualJsonPath), true);
+            if (! is_array($annualData)) {
+                $this->error('Invalid JSON structure in annual aggregate file.');
+                return Command::FAILURE;
+            }
+
+            $annualSummaryRows = [];
+            foreach (self::EXPECTED_ANNUAL as $yr => $expected) {
+                $yearKey = (string) $yr;
+                if (! isset($annualData[$yearKey])) {
+                    $this->error("Missing year {$yr} in annual aggregate file.");
+                    return Command::FAILURE;
+                }
+
+                $yearInfo = $annualData[$yearKey];
+                $districts = $yearInfo['districts'] ?? [];
+                $countKec = count($districts);
+                $sumKasus = array_sum(array_column($districts, 'kasus'));
+                $sumL = array_sum(array_column($districts, 'kasus_l'));
+                $sumP = array_sum(array_column($districts, 'kasus_p'));
+                $sumM = array_sum(array_column($districts, 'meninggal'));
+                $sumPop = array_sum(array_column($districts, 'penduduk'));
+
+                $isValid = ($countKec === $expected['kecamatan'])
+                    && ($sumKasus === $expected['kasus'])
+                    && ($sumL === $expected['l'])
+                    && ($sumP === $expected['p'])
+                    && ($sumM === $expected['meninggal'])
+                    && ($sumPop === $expected['penduduk']);
+
+                $annualSummaryRows[] = [
+                    $yr,
+                    "{$countKec}/{$expected['kecamatan']}",
+                    "{$sumKasus} ({$sumL} L + {$sumP} P)",
+                    $sumM,
+                    number_format($sumPop, 0, ',', '.'),
+                    $isValid ? 'VALID' : 'INVALID',
+                ];
+
+                if (! $isValid) {
+                    $this->error("Integrity check failed for year {$yr}!");
+                    return Command::FAILURE;
+                }
+
+                $periode = Periode::updateOrCreate(
+                    ['nama' => $yearInfo['name']],
+                    [
+                        'tahun' => $yr,
+                        'bulan' => null,
+                        'tipe_periode' => 'annual',
+                        'rentang_waktu' => $yearInfo['rentang_waktu'],
+                        'is_published' => true,
+                        'status_publikasi' => 'DAPAT_DIPUBLIKASIKAN',
+                        'sumber_data' => $yearInfo['sumber_data'],
+                        'status_kelengkapan' => $yearInfo['status_kelengkapan'],
+                        'keterangan' => $yearInfo['keterangan'],
+                    ]
+                );
+
+                foreach ($districts as $dist) {
+                    $kec = $allKecamatan->get($dist['nama']);
+                    if (! $kec) {
+                        $this->error("Kecamatan '{$dist['nama']}' not found in master table!");
+                        return Command::FAILURE;
+                    }
+
+                    KasusAgregat::updateOrCreate(
+                        [
+                            'kecamatan_id' => $kec->id,
+                            'periode_id' => $periode->id,
+                        ],
+                        [
+                            'jumlah_kasus' => (int) $dist['kasus'],
+                            'kasus_laki_laki' => (int) $dist['kasus_l'],
+                            'kasus_perempuan' => (int) $dist['kasus_p'],
+                            'jumlah_meninggal' => (int) $dist['meninggal'],
+                            'jumlah_penduduk' => (int) $dist['penduduk'],
+                            'incidence_rate' => $dist['incidence_rate'],
+                            'is_published' => true,
+                            'status_publikasi' => 'DAPAT_DIPUBLIKASIKAN',
+                            'keterangan' => 'Data resmi terverifikasi Dinkes Banyumas ' . $yr,
+                        ]
+                    );
+                }
+            }
+
+            $this->table(
+                ['Tahun', 'Kecamatan', 'Total Kasus (L+P)', 'Meninggal', 'Jumlah Penduduk', 'Status Validasi'],
+                $annualSummaryRows
+            );
+        }
+
         $filePath = $this->option('file') ?: database_path('seeders/data/agregat_kecamatan_dinkes_2026_internal.csv');
 
         if (! file_exists($filePath)) {

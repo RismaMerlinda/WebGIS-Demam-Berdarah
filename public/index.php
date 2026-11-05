@@ -5,6 +5,9 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
+// Auto-mount E: virtual drive to D:\ if not present for tools
+@exec('subst E: D:\\');
+
 // Determine if the application is in maintenance mode...
 if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
     require $maintenance;

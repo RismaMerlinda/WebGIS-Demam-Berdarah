@@ -22,3 +22,6 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+.agents
+.taste-skill
+/storage/framework/testing/disks

@@ -3,7 +3,7 @@
     "year": 2021,
     "name": "Data Tahunan 2021",
     "tipe_periode": "annual",
-    "rentang_waktu": "1 Tahun Penuh (Januari \u2013 Desember 2021)",
+    "rentang_waktu": "1 Tahun Penuh (Januari – Desember 2021)",
     "is_published": true,
     "status_publikasi": "DAPAT_DIPUBLIKASIKAN",
     "sumber_data": "Profil Kesehatan Kabupaten Banyumas 2021 (Tabel 65, Hal 168)",
@@ -286,11 +286,11 @@
     "year": 2022,
     "name": "Data Tahunan 2022",
     "tipe_periode": "annual",
-    "rentang_waktu": "1 Tahun Penuh (Januari \u2013 Desember 2022)",
+    "rentang_waktu": "1 Tahun Penuh (Januari – Desember 2022)",
     "is_published": true,
     "status_publikasi": "DAPAT_DIPUBLIKASIKAN",
-    "sumber_data": "Profil Kesehatan Kabupaten Banyumas 2022 (Tabel 72, Hal 193)",
-    "status_kelengkapan": "Lengkap (27 Kecamatan)",
+    "sumber_data": "DATA DEMAM BERDARAH KABUPATEN BANYUMAS.xlsx & Profil Kesehatan Kab. Banyumas 2022 (Tabel 72, Hal 193)",
+    "status_kelengkapan": "Lengkap (27 Kecamatan - Tahunan)",
     "keterangan": "Data resmi Profil Kesehatan Kabupaten Banyumas Tahun 2022. Total kasus: 307, kematian: 13, IR: 16,7 per 100.000 penduduk.",
     "districts": [
       {
@@ -380,8 +380,8 @@
         "kasus_p": 1,
         "kasus": 4,
         "meninggal": 0,
-        "penduduk": 3941,
-        "incidence_rate": 101.5
+        "penduduk": 39410,
+        "incidence_rate": 10.15
       },
       {
         "kode": "330210",
@@ -430,8 +430,8 @@
         "kasus_p": 12,
         "kasus": 20,
         "meninggal": 1,
-        "penduduk": 108818,
-        "incidence_rate": 18.38
+        "penduduk": 106818,
+        "incidence_rate": 18.72
       },
       {
         "kode": "330215",
@@ -569,11 +569,11 @@
     "year": 2023,
     "name": "Data Tahunan 2023",
     "tipe_periode": "annual",
-    "rentang_waktu": "1 Tahun Penuh (Januari \u2013 Desember 2023)",
+    "rentang_waktu": "1 Tahun Penuh (Januari – Desember 2023)",
     "is_published": true,
     "status_publikasi": "DAPAT_DIPUBLIKASIKAN",
-    "sumber_data": "Profil Kesehatan Kabupaten Banyumas 2023 (Tabel 72, Hal 239)",
-    "status_kelengkapan": "Lengkap (27 Kecamatan)",
+    "sumber_data": "DATA DEMAM BERDARAH KABUPATEN BANYUMAS.xlsx & Profil Kesehatan Kab. Banyumas 2023 (Tabel 72, Hal 239)",
+    "status_kelengkapan": "Lengkap (27 Kecamatan - Tahunan)",
     "keterangan": "Data resmi Profil Kesehatan Kabupaten Banyumas Tahun 2023. Total kasus: 273, kematian: 4, IR: 14,7 per 100.000 penduduk.",
     "districts": [
       {
@@ -713,8 +713,8 @@
         "kasus_p": 5,
         "kasus": 9,
         "meninggal": 0,
-        "penduduk": 10779,
-        "incidence_rate": 83.5
+        "penduduk": 107790,
+        "incidence_rate": 8.35
       },
       {
         "kode": "330215",
@@ -852,11 +852,11 @@
     "year": 2024,
     "name": "Data Tahunan 2024",
     "tipe_periode": "annual",
-    "rentang_waktu": "1 Tahun Penuh (Januari \u2013 Desember 2024)",
+    "rentang_waktu": "1 Tahun Penuh (Januari – Desember 2024)",
     "is_published": true,
     "status_publikasi": "DAPAT_DIPUBLIKASIKAN",
-    "sumber_data": "Profil Kesehatan Kabupaten Banyumas 2024 (Tabel 72, Hal 267-268)",
-    "status_kelengkapan": "Lengkap (27 Kecamatan)",
+    "sumber_data": "DATA DEMAM BERDARAH KABUPATEN BANYUMAS.xlsx & Profil Kesehatan Kab. Banyumas 2024 (Tabel 72, Hal 267-268)",
+    "status_kelengkapan": "Lengkap (27 Kecamatan - Tahunan)",
     "keterangan": "Data resmi Profil Kesehatan Kabupaten Banyumas Tahun 2024. Total kasus: 2.180, kematian: 12, IR: 116,7 per 100.000 penduduk.",
     "districts": [
       {
@@ -1135,11 +1135,11 @@
     "year": 2025,
     "name": "Data Tahunan 2025",
     "tipe_periode": "annual",
-    "rentang_waktu": "1 Tahun Penuh (Januari \u2013 Desember 2025)",
+    "rentang_waktu": "1 Tahun Penuh (Januari – Desember 2025)",
     "is_published": true,
     "status_publikasi": "DAPAT_DIPUBLIKASIKAN",
-    "sumber_data": "Profil Kesehatan Kabupaten Banyumas 2025 (Tabel 72, Hal 272)",
-    "status_kelengkapan": "Lengkap (27 Kecamatan)",
+    "sumber_data": "DATA DEMAM BERDARAH KABUPATEN BANYUMAS.xlsx & Profil Kesehatan Kab. Banyumas 2025 (Tabel 72, Hal 272)",
+    "status_kelengkapan": "Lengkap (27 Kecamatan - Tahunan)",
     "keterangan": "Data resmi Profil Kesehatan Kabupaten Banyumas Tahun 2025. Total kasus: 1.062, kematian: 8, IR: 56,6 per 100.000 penduduk.",
     "districts": [
       {

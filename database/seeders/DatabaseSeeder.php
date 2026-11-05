@@ -19,6 +19,8 @@ class DatabaseSeeder extends Seeder
             AdminSeeder::class,
             KecamatanSeeder::class,
             KasusAgregatSeeder::class,
+            DatasetMetadataSeeder::class,
+            EducationSeeder::class,
         ]);
     }
 }

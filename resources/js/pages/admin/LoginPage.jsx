@@ -110,13 +110,13 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col justify-center items-center px-4 py-8 sm:py-12">
+    <div className="min-h-dvh bg-[#fbfbfa] flex flex-col justify-center items-center px-4 py-8 sm:py-12">
       <div className="w-full max-w-sm sm:max-w-md space-y-6">
         {/* Tautan Kembali ke Beranda */}
         <div>
           <Link
             to="/"
-            className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 hover:text-slate-800 transition-colors"
+            className="inline-flex items-center gap-1.5 text-xs font-medium text-[#4e6057] hover:text-[#17221e] transition-colors"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             <span>Kembali ke Halaman Beranda</span>
@@ -124,26 +124,26 @@ export default function LoginPage() {
         </div>
 
         {/* Card Login Sederhana & Bersih */}
-        <div className="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-8 shadow-xs">
+        <div className="bg-white border border-[#e2e8e5] rounded-lg p-6 sm:p-8">
           {/* Logo & Identitas Sistem */}
           <div className="flex items-center gap-2.5 mb-5">
-            <div className="w-8 h-8 rounded-lg bg-rose-50 border border-rose-100 flex items-center justify-center text-rose-600 shrink-0">
-              <Activity className="w-4 h-4 stroke-[2.5]" />
+            <div className="w-8 h-8 rounded-md bg-[#123027] text-white flex items-center justify-center shrink-0">
+              <Activity className="w-4 h-4 stroke-[2.2]" />
             </div>
             <div>
-              <span className="font-bold text-sm text-slate-900 tracking-tight block leading-tight">
+              <span className="font-bold text-sm text-[#17221e] tracking-tight block leading-tight">
                 WebGIS DBD Banyumas
               </span>
-              <span className="text-[10px] text-slate-400">Portal Administrator</span>
+              <span className="text-[11px] text-[#7d8f87]">Portal Administrator</span>
             </div>
           </div>
 
-          {/* Judul & Subjudul 1 Kalimat */}
+          {/* Judul & Subjudul */}
           <div className="space-y-1 mb-6">
-            <h1 className="text-xl font-bold text-slate-900 tracking-tight">
+            <h1 className="text-xl font-bold text-[#17221e] tracking-tight">
               Masuk Administrator
             </h1>
-            <p className="text-xs text-slate-500 leading-relaxed">
+            <p className="text-xs text-[#4e6057] leading-relaxed">
               Gunakan akun terdaftar untuk mengakses panel pengelolaan data spasial.
             </p>
           </div>
@@ -151,16 +151,15 @@ export default function LoginPage() {
           {/* Pesan Error / Rate Limit */}
           {generalError && (
             <div
-              className={`mb-5 p-3 rounded-xl text-xs flex items-start gap-2.5 border ${
-                rateLimitSeconds
-                  ? 'bg-amber-50 border-amber-200 text-amber-900'
-                  : 'bg-rose-50 border-rose-200 text-rose-800'
-              }`}
+              className={`mb-5 p-3 rounded-md text-xs flex items-start gap-2.5 border ${rateLimitSeconds
+                  ? 'bg-[#fffbeb] border-[#fde68a] text-[#78350f]'
+                  : 'bg-[#fef2f2] border-[#fecaca] text-[#991b1b]'
+                }`}
             >
               {rateLimitSeconds ? (
-                <Clock className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+                <Clock className="w-4 h-4 text-[#b45309] shrink-0 mt-0.5" />
               ) : (
-                <AlertCircle className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" />
+                <AlertCircle className="w-4 h-4 text-[#b91c1c] shrink-0 mt-0.5" />
               )}
               <p className="leading-snug">{generalError}</p>
             </div>
@@ -172,12 +171,12 @@ export default function LoginPage() {
             <div className="space-y-1">
               <label
                 htmlFor="email"
-                className="block text-xs font-medium text-slate-700"
+                className="block text-xs font-medium text-[#17221e]"
               >
                 Alamat Email
               </label>
-              <div className="relative rounded-xl">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+              <div className="relative rounded-md">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-[#7d8f87]">
                   <Mail className="w-4 h-4" />
                 </div>
                 <input
@@ -189,15 +188,14 @@ export default function LoginPage() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="nama@instansi.go.id"
-                  className={`block w-full pl-9 pr-3.5 py-2 text-xs sm:text-sm rounded-xl border bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-1 transition-all ${
-                    errors.email
-                      ? 'border-rose-400 focus:ring-rose-400 focus:border-rose-400'
-                      : 'border-slate-300 focus:ring-slate-800 focus:border-slate-800'
-                  }`}
+                  className={`block w-full pl-9 pr-3.5 py-2 text-xs sm:text-sm rounded-md border bg-white text-[#17221e] placeholder-[#7d8f87] focus:outline-none focus:border-[#123027] transition-colors ${errors.email
+                      ? 'border-[#fecaca] focus:border-[#b91c1c]'
+                      : 'border-[#c5d1cb]'
+                    }`}
                 />
               </div>
               {errors.email && (
-                <p className="text-[11px] text-rose-600 pt-0.5">
+                <p className="text-[11px] text-[#b91c1c] pt-0.5">
                   {Array.isArray(errors.email) ? errors.email[0] : errors.email}
                 </p>
               )}
@@ -207,12 +205,12 @@ export default function LoginPage() {
             <div className="space-y-1">
               <label
                 htmlFor="password"
-                className="block text-xs font-medium text-slate-700"
+                className="block text-xs font-medium text-[#17221e]"
               >
                 Password
               </label>
-              <div className="relative rounded-xl">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+              <div className="relative rounded-md">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-[#7d8f87]">
                   <Lock className="w-4 h-4" />
                 </div>
                 <input
@@ -224,23 +222,22 @@ export default function LoginPage() {
                   value={formData.password}
                   onChange={handleChange}
                   placeholder="••••••••••••"
-                  className={`block w-full pl-9 pr-10 py-2 text-xs sm:text-sm rounded-xl border bg-slate-50/50 text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-1 transition-all ${
-                    errors.password
-                      ? 'border-rose-400 focus:ring-rose-400 focus:border-rose-400'
-                      : 'border-slate-300 focus:ring-slate-800 focus:border-slate-800'
-                  }`}
+                  className={`block w-full pl-9 pr-10 py-2 text-xs sm:text-sm rounded-md border bg-white text-[#17221e] placeholder-[#7d8f87] focus:outline-none focus:border-[#123027] transition-colors ${errors.password
+                      ? 'border-[#fecaca] focus:border-[#b91c1c]'
+                      : 'border-[#c5d1cb]'
+                    }`}
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600 focus:outline-none cursor-pointer"
+                  className="absolute inset-y-0 right-0 pr-3 flex items-center text-[#7d8f87] hover:text-[#17221e] focus:outline-none cursor-pointer"
                   aria-label={showPassword ? 'Sembunyikan password' : 'Tampilkan password'}
                 >
                   {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                 </button>
               </div>
               {errors.password && (
-                <p className="text-[11px] text-rose-600 pt-0.5">
+                <p className="text-[11px] text-[#b91c1c] pt-0.5">
                   {Array.isArray(errors.password) ? errors.password[0] : errors.password}
                 </p>
               )}
@@ -256,9 +253,9 @@ export default function LoginPage() {
                   checked={formData.remember}
                   onChange={handleChange}
                   disabled={submitting}
-                  className="w-3.5 h-3.5 rounded text-rose-600 focus:ring-rose-500 border-slate-300 cursor-pointer"
+                  className="w-3.5 h-3.5 rounded text-[#123027] focus:ring-[#123027] border-[#c5d1cb] cursor-pointer"
                 />
-                <span className="text-xs text-slate-600">
+                <span className="text-xs text-[#4e6057]">
                   Ingat sesi saya
                 </span>
               </label>
@@ -269,7 +266,7 @@ export default function LoginPage() {
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-rose-600 hover:bg-rose-700 active:bg-rose-800 disabled:bg-rose-400 text-white font-medium text-xs sm:text-sm shadow-xs transition-colors cursor-pointer disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-rose-500/20"
+                className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-md bg-[#123027] hover:bg-[#194337] active:bg-[#0c201a] disabled:bg-[#c5d1cb] text-white font-semibold text-xs sm:text-sm transition-colors cursor-pointer disabled:cursor-not-allowed focus:outline-none"
               >
                 {submitting ? (
                   <>
@@ -283,9 +280,9 @@ export default function LoginPage() {
             </div>
           </form>
 
-          {/* Catatan Kecil Singkat */}
-          <div className="mt-6 pt-4 border-t border-slate-100 text-center">
-            <p className="text-[11px] text-slate-400">
+          {/* Catatan Singkat */}
+          <div className="mt-6 pt-4 border-t border-[#e2e8e5] text-center">
+            <p className="text-[11px] text-[#7d8f87]">
               Akses terbatas untuk administrator
             </p>
           </div>

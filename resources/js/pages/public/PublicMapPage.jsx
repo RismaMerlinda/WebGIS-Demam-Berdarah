@@ -20,11 +20,130 @@ import {
 } from 'lucide-react';
 
 // BANYUMAS GEOGRAPHIC CENTER & INITIAL BOUNDS
-const BANYUMAS_CENTER = [-7.45, 109.18];
-const DEFAULT_ZOOM = 10;
+export const BANYUMAS_CENTER = [-7.45, 109.18];
+export const DEFAULT_ZOOM = 10;
+
+export const MONTH_OPTIONS = [
+  { value: 'all', label: 'Semua Bulan (Akumulasi)' },
+  { value: '1', label: 'Januari' },
+  { value: '2', label: 'Februari' },
+  { value: '3', label: 'Maret' },
+  { value: '4', label: 'April' },
+  { value: '5', label: 'Mei' },
+  { value: '6', label: 'Juni' },
+  { value: '7', label: 'Juli' },
+  { value: '8', label: 'Agustus' },
+  { value: '9', label: 'September' },
+  { value: '10', label: 'Oktober' },
+  { value: '11', label: 'November' },
+  { value: '12', label: 'Desember' },
+];
+
+export const CHOROPLETH_CLASSIFICATION = {
+  indicator: 'Jumlah Kasus DBD Agregat per Kecamatan',
+  method: 'Klasifikasi interval bertingkat berdasarkan jumlah kasus DBD agregat per kecamatan.',
+  tiers: [
+    {
+      tier: 0,
+      label: '0 Kasus (Nol Kasus)',
+      rangeLabel: '0 Kasus',
+      priorityStatus: 'Nol Kasus',
+      color: '#f1f5f9',
+      borderColor: '#94a3b8',
+      description: 'Tidak terdapat laporan kejadian DBD pada periode aktif.',
+    },
+    {
+      tier: 1,
+      label: '1 – 4 Kasus',
+      rangeLabel: '1–4 Kasus',
+      priorityStatus: 'Pemantauan Rutin',
+      color: '#fed7aa',
+      borderColor: '#fb923c',
+      description: 'Kejadian kasus rendah, pemantauan rutin wilayah.',
+    },
+    {
+      tier: 2,
+      label: '5 – 9 Kasus',
+      rangeLabel: '5–9 Kasus',
+      priorityStatus: 'Peningkatan Kewaspadaan',
+      color: '#fb923c',
+      borderColor: '#ea580c',
+      description: 'Kejadian kasus sedang, peningkatan kewaspadaan lingkungan.',
+    },
+    {
+      tier: 3,
+      label: '≥ 10 Kasus (Prioritas Pemantauan)',
+      rangeLabel: '≥10 Kasus',
+      priorityStatus: 'Wilayah Prioritas Pemantauan',
+      color: '#dc2626',
+      borderColor: '#991b1b',
+      description: 'Wilayah Prioritas Pemantauan penanganan dan pengendalian vektor.',
+    },
+  ],
+  nodata: {
+    label: 'Data Belum Tersedia',
+    rangeLabel: 'Tidak Tersedia',
+    priorityStatus: 'Data Belum Tersedia',
+    color: '#cbd5e1',
+    borderColor: '#94a3b8',
+    description: 'Wilayah kecamatan tanpa data kasus pada periode aktif.',
+  },
+};
+
+export function escapeHtml(str) {
+  if (str === null || str === undefined) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+export function buildDistrictPopupHtml({
+  name,
+  code,
+  stats,
+  mapData,
+  selectedYear,
+  selectedMonthLabel,
+}) {
+  const hasData = Boolean(stats && stats.has_data);
+  const cases = hasData && stats ? stats.cases : 'Belum tersedia';
+  const deaths = hasData && stats && typeof stats.deaths === 'number' ? stats.deaths : '-';
+  const ir = stats && stats.incidence_rate ? `${stats.incidence_rate} / 100k` : '-';
+  const priorityLabel = stats ? stats.priority_status : 'Data Belum Tersedia';
+
+  return `
+    <div style="font-family: inherit; font-size: 12px; line-height: 1.4; padding: 2px;">
+      <div style="font-weight: 700; color: #0f172a; margin-bottom: 4px; font-size: 13px; border-bottom: 1px solid #e2e8f0; padding-bottom: 3px;">
+        Kecamatan ${escapeHtml(name)}
+      </div>
+      <div style="font-size: 11px; color: #64748b; margin-bottom: 6px;">
+        Periode: ${escapeHtml(selectedMonthLabel || '')} ${escapeHtml(selectedYear || '')}
+      </div>
+      <div style="color: #475569; display: flex; justify-content: space-between; gap: 8px; margin-bottom: 2px;">
+        <span>Jumlah Kasus:</span>
+        <strong style="color: ${typeof cases === 'number' && cases >= 10 ? '#dc2626' : '#0f172a'};">${escapeHtml(cases)} ${typeof cases === 'number' ? 'Kasus' : ''}</strong>
+      </div>
+      <div style="color: #475569; display: flex; justify-content: space-between; gap: 8px; margin-bottom: 2px;">
+        <span>Kematian:</span>
+        <strong style="color: #0f172a;">${escapeHtml(deaths)}</strong>
+      </div>
+      <div style="color: #475569; display: flex; justify-content: space-between; gap: 8px; margin-bottom: 2px;">
+        <span>Incidence Rate:</span>
+        <span>${escapeHtml(ir)}</span>
+      </div>
+      <div style="margin-top: 4px; padding-top: 4px; border-top: 1px solid #e2e8f0; font-size: 11px; font-weight: 600; color: ${typeof cases === 'number' && cases >= 10 ? '#dc2626' : typeof cases === 'number' && cases > 0 ? '#ea580c' : '#64748b'
+    };">
+        ${escapeHtml(priorityLabel)}
+      </div>
+    </div>
+  `;
+}
 
 // COLOR CLASSIFICATION FUNCTION
-const getColor = (cases, hasData) => {
+export const getColor = (cases, hasData) => {
   if (!hasData || cases === null || cases === undefined) {
     return '#cbd5e1'; // Slate-300: Data Belum Tersedia
   }
@@ -41,7 +160,7 @@ const getColor = (cases, hasData) => {
 };
 
 // HELPER CONTROLLER COMPONENT TO ACCESS LEAFLET INSTANCE
-function MapController({ geojsonData, resetTrigger, onMapReady }) {
+export function MapController({ geojsonData, resetTrigger, onMapReady }) {
   const map = useMap();
 
   useEffect(() => {
@@ -299,9 +418,8 @@ export default function PublicMapPage() {
             <span>Incidence Rate:</span>
             <span>${ir}</span>
           </div>
-          <div style="margin-top: 4px; padding-top: 4px; border-top: 1px solid #e2e8f0; font-size: 11px; font-weight: 600; color: ${
-            isPriority ? '#dc2626' : cases > 0 ? '#ea580c' : '#64748b'
-          };">
+          <div style="margin-top: 4px; padding-top: 4px; border-top: 1px solid #e2e8f0; font-size: 11px; font-weight: 600; color: ${isPriority ? '#dc2626' : cases > 0 ? '#ea580c' : '#64748b'
+        };">
             ${priorityLabel}
           </div>
         </div>
@@ -649,13 +767,12 @@ export default function PublicMapPage() {
                       <div>
                         <span className="text-slate-500 block text-[10px]">Jumlah Kasus:</span>
                         <strong
-                          className={`text-sm ${
-                            selectedDistrict.cases >= 10
+                          className={`text-sm ${selectedDistrict.cases >= 10
                               ? 'text-red-600'
                               : selectedDistrict.cases > 0
-                              ? 'text-orange-600'
-                              : 'text-slate-700'
-                          }`}
+                                ? 'text-orange-600'
+                                : 'text-slate-700'
+                            }`}
                         >
                           {selectedDistrict.has_data ? `${selectedDistrict.cases} Kasus` : 'Belum Ada Data'}
                         </strong>
@@ -683,13 +800,12 @@ export default function PublicMapPage() {
                     </div>
 
                     <div
-                      className={`text-[11px] font-semibold px-2 py-1 rounded-md text-center ${
-                        selectedDistrict.is_priority
+                      className={`text-[11px] font-semibold px-2 py-1 rounded-md text-center ${selectedDistrict.is_priority
                           ? 'bg-red-50 text-red-700 border border-red-200'
                           : selectedDistrict.cases > 0
-                          ? 'bg-orange-50 text-orange-700 border border-orange-200'
-                          : 'bg-slate-100 text-slate-600'
-                      }`}
+                            ? 'bg-orange-50 text-orange-700 border border-orange-200'
+                            : 'bg-slate-100 text-slate-600'
+                        }`}
                     >
                       {selectedDistrict.priority_status}
                     </div>
