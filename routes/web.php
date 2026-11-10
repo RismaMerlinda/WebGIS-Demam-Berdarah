@@ -2,7 +2,12 @@
 
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\AdminProfileController;
+use App\Http\Controllers\Admin\CaseManagementController;
 use App\Http\Controllers\Admin\EducationAdminController;
+use App\Http\Controllers\Admin\MetadataManagementController;
+use App\Http\Controllers\Admin\PeriodManagementController;
+use App\Http\Controllers\Admin\RegionManagementController;
+use App\Http\Controllers\Admin\UserManagementController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Public\ChatbotController;
 use App\Http\Controllers\Public\DashboardController;
@@ -51,6 +56,46 @@ Route::prefix('api')->group(function () {
 
         // Fitur 11: Mengubah Kata Sandi Administrator
         Route::put('/admin/profile/password', [AdminProfileController::class, 'updatePassword']);
+
+        // Fitur 12, 13, 14, 15, & 16: Manajemen Pengguna (Pencarian, Filter, Tambah, Edit, Hapus, & Detail Akun)
+        Route::get('/admin/users', [UserManagementController::class, 'index']);
+        Route::post('/admin/users', [UserManagementController::class, 'store']);
+        Route::get('/admin/users/{id}', [UserManagementController::class, 'show']);
+        Route::put('/admin/users/{id}', [UserManagementController::class, 'update']);
+        Route::delete('/admin/users/{id}', [UserManagementController::class, 'destroy']);
+
+        // Fitur 17, 18, 19 & 20: Pengelolaan Data Kasus DBD (Akses, Detail, Tambah, Edit, & Hapus Kasus)
+        Route::get('/admin/cases', [CaseManagementController::class, 'index']);
+        Route::post('/admin/cases', [CaseManagementController::class, 'store']);
+        Route::get('/admin/cases/{id}', [CaseManagementController::class, 'show']);
+        Route::put('/admin/cases/{id}', [CaseManagementController::class, 'update']);
+        Route::delete('/admin/cases/{id}', [CaseManagementController::class, 'destroy']);
+        Route::get('/admin/districts', [CaseManagementController::class, 'districts']);
+        Route::get('/admin/case-periods', [CaseManagementController::class, 'periods']);
+
+        // Fitur 21, 22, 23 & 24: Pengelolaan Data Wilayah Kecamatan (Akses, Detail, Tambah, Edit, & Hapus Wilayah)
+        Route::get('/admin/regions', [RegionManagementController::class, 'index']);
+        Route::post('/admin/regions', [RegionManagementController::class, 'store']);
+        Route::get('/admin/regions/{id}', [RegionManagementController::class, 'show']);
+        Route::put('/admin/regions/{id}', [RegionManagementController::class, 'update']);
+        Route::post('/admin/regions/{id}', [RegionManagementController::class, 'update']);
+        Route::delete('/admin/regions/{id}', [RegionManagementController::class, 'destroy']);
+
+        // Fitur 25, 26, 27, & 28: Pengelolaan Data Periode Waktu (Akses, Detail, Tambah, Edit, & Hapus Periode)
+        Route::get('/admin/periods', [PeriodManagementController::class, 'index']);
+        Route::post('/admin/periods', [PeriodManagementController::class, 'store']);
+        Route::get('/admin/periods/{id}', [PeriodManagementController::class, 'show']);
+        Route::put('/admin/periods/{id}', [PeriodManagementController::class, 'update']);
+        Route::post('/admin/periods/{id}', [PeriodManagementController::class, 'update']);
+        Route::delete('/admin/periods/{id}', [PeriodManagementController::class, 'destroy']);
+
+        // Fitur 29, 30, 31, & 32: Pengelolaan Metadata Dataset (Akses, Detail, Pencarian, Edit, Tambah, & Hapus Metadata)
+        Route::get('/admin/metadata', [MetadataManagementController::class, 'index']);
+        Route::post('/admin/metadata', [MetadataManagementController::class, 'store']);
+        Route::get('/admin/metadata/{id}', [MetadataManagementController::class, 'show']);
+        Route::put('/admin/metadata/{id}', [MetadataManagementController::class, 'update']);
+        Route::post('/admin/metadata/{id}', [MetadataManagementController::class, 'update']);
+        Route::delete('/admin/metadata/{id}', [MetadataManagementController::class, 'destroy']);
 
         Route::get('/admin/ping', function () {
             return response()->json([
