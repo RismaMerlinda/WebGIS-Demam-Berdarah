@@ -1,0 +1,38 @@
+{
+    "type": "Feature",
+    "properties": {
+        "kode_kecamatan": "330242",
+        "nama_kecamatan": "Kecamatan Spasial Edit",
+        "kabupaten": "Banyumas",
+        "provinsi": "Jawa Tengah",
+        "source": "Update Administrator WebGIS",
+        "license": "Creative Commons Attribution (CC BY-IGO)"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    109.25,
+                    -7.45
+                ],
+                [
+                    109.27,
+                    -7.45
+                ],
+                [
+                    109.27,
+                    -7.47
+                ],
+                [
+                    109.25,
+                    -7.47
+                ],
+                [
+                    109.25,
+                    -7.45
+                ]
+            ]
+        ]
+    }
+}
